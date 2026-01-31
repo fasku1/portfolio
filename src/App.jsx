@@ -19,11 +19,11 @@ function App() {
       </div>
       <Container >
         <Row style={{ paddingBottom: '50px' }} className="justify-content-center">
-          <Card style={{ width: '30rem' }}>
+          <Card style={{ width: '35rem' }}>
             <Card.Img variant="top" src={preview_jobtracker} className="portfolio-img"/>
             <Card.Body>
-              <Card.Title>Job Tracker App</Card.Title>
-              <Card.Text>
+              <Card.Title style={{ fontSize: '2rem' }}>Job Tracker App</Card.Title>
+              <Card.Text style={{ fontSize: '1.5rem' }}>
                 A full-stack web application that is designed to make it easy for people to keep track of all the jobs that they apply to built of React using google cloud platform API.
               </Card.Text>
               <Button variant="primary">Go somewhere</Button>

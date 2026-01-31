@@ -3,11 +3,14 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+
 import { Container, Row, Col } from 'react-bootstrap'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import Carousel from 'react-bootstrap/Carousel';
 
 import preview_jobtracker from './assets/jobtracker.png';
+import preview_jobtracker1 from './assets/jobtracker1.png';
 
 
 function App() {
@@ -20,7 +23,14 @@ function App() {
       <Container >
         <Row style={{ paddingBottom: '50px' }} className="justify-content-center">
           <Card style={{ width: '35rem' }}>
-            <Card.Img variant="top" src={preview_jobtracker} className="portfolio-img"/>
+            <Carousel>
+              <Carousel.Item>
+                <Card.Img variant="top" src={preview_jobtracker} className="portfolio-img" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <Card.Img variant="top" src={preview_jobtracker1} className="portfolio-img" />
+              </Carousel.Item>
+            </Carousel>
             <Card.Body>
               <Card.Title style={{ fontSize: '2rem' }}>Job Tracker App</Card.Title>
               <Card.Text style={{ fontSize: '1.5rem' }}>

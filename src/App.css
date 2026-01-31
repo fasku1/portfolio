@@ -40,10 +40,24 @@
 
 .portfolio-img {
   border: 1px solid #c6c6c6; 
-  width: 500px;
-  height: auto;
+
 }
 
 .cardTitle {
   color: #888;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+.carousel-item {
+  height: 250px;
+}
+
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }

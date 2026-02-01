@@ -28,7 +28,7 @@ function App() {
           <Col xs="auto" style={{ textAlign: 'left' }}>
             <h1>Fasku's Portfolio</h1>
             <p style={{ fontSize: '1.2rem' }}>Hello! this is just a little portfolio of projects I have worked on! <br /> A little about me is I love to sing, game and do content creation :)</p>
-            <p style={{ fontSize: '1.2rem' }}>Discord: Fasku</p>
+            <p style={{ fontSize: '1.2rem' }}>GitHub: Fasku1 | Discord: Fasku</p>
 
           </Col>
         </Row>
@@ -38,23 +38,25 @@ function App() {
       <Container >
         <Row style={{ paddingBottom: '50px' }} className="justify-content-center">
           <Col xs="auto" className="mb-4">
-            <Card style={{ width: '35rem' }}>
-              <Carousel>
-                <Carousel.Item>
-                  <Card.Img variant="top" src={preview_jobtracker} className="portfolio-img" />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <Card.Img variant="top" src={preview_jobtracker1} className="portfolio-img" />
-                </Carousel.Item>
-              </Carousel>
-              <Card.Body>
-                <Card.Title style={{ fontSize: '2rem' }}>Job Tracker App</Card.Title>
-                <Card.Text style={{ fontSize: '1.5rem' }}>
-                  A full-stack web application that is designed to make it easy for people to keep track of all the jobs that they apply to built of React using google cloud platform API.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-              </Card.Body>
-            </Card>
+            <a href="https://github.com/fasku1/job-tracker-project" target="_blank" style={{ textDecoration: 'none' }} className="card-link">
+              <Card style={{ width: '35rem' }} className="card">
+                <Carousel>
+                  <Carousel.Item>
+                    <Card.Img variant="top" src={preview_jobtracker} className="portfolio-img" />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <Card.Img variant="top" src={preview_jobtracker1} className="portfolio-img" />
+                  </Carousel.Item>
+                </Carousel>
+                <Card.Body>
+                  <Card.Title style={{ fontSize: '2rem' }}>Job Tracker App</Card.Title>
+                  <Card.Text style={{ fontSize: '1.5rem' }}>
+                    A full-stack web application that is designed to make it easy for people to keep track of all the jobs that they apply to built of React using google cloud platform API.
+                  </Card.Text>
+                  <Button variant="primary">Go somewhere</Button>
+                </Card.Body>
+              </Card>
+            </a>
           </Col>
           <Col xs="auto" className="mb-4">
             <Card style={{ width: '35rem' }}>
@@ -88,7 +90,7 @@ function App() {
               <Card.Body>
                 <Card.Title style={{ fontSize: '2rem' }}>Campus Rating App</Card.Title>
                 <Card.Text style={{ fontSize: '1.5rem' }}>
-                  A full-stack web application to help students discover campus locations suited for specific activities like studying, relaxing, or napping built of React, Spring Boot, and MySQL.
+                  Another full-stack web application to help students discover campus locations suited for specific activities like studying, relaxing, or napping built of React, Spring Boot, and MySQL.
                 </Card.Text>
                 <Button variant="primary">Go somewhere</Button>
               </Card.Body>

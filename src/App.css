@@ -65,3 +65,15 @@
 body {
   background-color: #ffffff;
 }
+
+/* Give your <a> tag a class like "card-link" */
+.card-link:hover .card {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease;
+}
+
+/* Important: Add the transition to the base card too 
+   so it slides back down smoothly when you move the mouse away! */
+.card {
+  transition: transform 0.3s ease;
+}

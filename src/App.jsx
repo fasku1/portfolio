@@ -27,7 +27,7 @@ function App() {
           </Col>
           <Col xs="auto" style={{ textAlign: 'left' }}>
             <h1>Fasku's Portfolio</h1>
-            <p style={{ fontSize: '1.2rem' }}>Hello! this is just a little portfolio of projects I have worked on! <br/> A little about me is I love to sing, game and do content creation :)</p>
+            <p style={{ fontSize: '1.2rem' }}>Hello! this is just a little portfolio of projects I have worked on! <br /> A little about me is I love to sing, game and do content creation :)</p>
             <p style={{ fontSize: '1.2rem' }}>Discord: Fasku</p>
 
           </Col>
@@ -67,12 +67,35 @@ function App() {
                 </Carousel.Item>
               </Carousel>
               <Card.Body>
-                <Card.Title style={{ fontSize: '2rem' }}>Job Tracker App</Card.Title>
+                <Card.Title style={{ fontSize: '2rem' }}>Fraud Detection App</Card.Title>
                 <Card.Text style={{ fontSize: '1.5rem' }}>
-                  A full-stack web application that is designed to make it easy for people to keep track of all the jobs that they apply to built of React using google cloud platform API.
+                  A real-time transaction monitoring app built with AWS and Twilio that detects potentially fraudulent transactions and notifies users in real-time via SMS.
                 </Card.Text>
                 <Button variant="primary">Go somewhere</Button>
               </Card.Body>
+            </Card>
+          </Col>
+          <Col xs="auto" className="mb-4">
+            <Card style={{ width: '35rem' }}>
+              <Carousel>
+                <Carousel.Item>
+                  <Card.Img variant="top" src={preview_jobtracker} className="portfolio-img" />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <Card.Img variant="top" src={preview_jobtracker1} className="portfolio-img" />
+                </Carousel.Item>
+              </Carousel>
+              <Card.Body>
+                <Card.Title style={{ fontSize: '2rem' }}>Campus Rating App</Card.Title>
+                <Card.Text style={{ fontSize: '1.5rem' }}>
+                  A full-stack web application to help students discover campus locations suited for specific activities like studying, relaxing, or napping built of React, Spring Boot, and MySQL.
+                </Card.Text>
+                <Button variant="primary">Go somewhere</Button>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col xs="auto" className="mb-4">
+            <Card style={{ width: '35rem' }} className="border-white">
             </Card>
           </Col>
         </Row>

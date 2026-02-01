@@ -12,6 +12,8 @@ import Carousel from 'react-bootstrap/Carousel';
 
 import me from './assets/mecrop.jpg';
 import github_logo from './assets/Octicons-mark-github.svg'
+import linkedin_logo from './assets/linkedin-logo.png'
+import discord_logo from './assets/discord-logo.png'
 import preview_jobtracker from './assets/jobtracker.png';
 import preview_jobtracker1 from './assets/jobtracker1.png';
 
@@ -32,16 +34,34 @@ function App() {
             <p style={{ fontSize: '1.2rem' }}>Hello! this is just a little portfolio of projects I have worked on! <br /> A little about me is I love to sing, game and do content creation :)</p>
 
 
-            <Row className="gx-2"> {/* gx-2 keeps them close like we discussed */}
+            <Row className="gx-2 "> {/* gx-2 keeps them close like we discussed */}
               <Col xs="auto">
                 <Image src={github_logo} style={{ height: '20px' }} />
               </Col>
               <Col xs="auto">
                 <p className="mb-0" style={{ fontSize: '1.2rem' }}>
-                  <strong>GitHub</strong>: <a href="..." target="_blank">Fasku1</a>
+                  <strong>GitHub</strong>: <a href="https://github.com/fasku1" target="_blank">Fasku1</a> |
                 </p>
               </Col>
-              
+
+              <Col xs="auto">
+                <Image src={linkedin_logo} style={{ height: '20px' }} />
+              </Col>
+              <Col xs="auto">
+                <p className="mb-0" style={{ fontSize: '1.2rem' }}>
+                  <strong>Linked In</strong>: <a href="https://www.linkedin.com/in/ethan-l-yang/" target="_blank">Ethan Yang</a> |
+                </p>
+              </Col>
+
+              <Col xs="auto">
+                <Image src={discord_logo} style={{ height: '20px' }} />
+              </Col>
+              <Col xs="auto">
+                <p className="mb-0" style={{ fontSize: '1.2rem' }}>
+                  <strong>Discord</strong>: <a>Fasku</a>
+                </p>
+              </Col>
+
             </Row>
 
           </Col>

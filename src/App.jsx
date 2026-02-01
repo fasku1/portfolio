@@ -22,8 +22,11 @@ function App() {
 
   return (
     <>
+      {/* <div class="fade-overlay"></div> */}
+
+
       {/* Title */}
-      <Container style={{ paddingTop: '50px', paddingBottom: '24px' }} >
+      <Container style={{ paddingTop: '50px', paddingBottom: '24px' }} className="pushdown-overlay" >
         <Row className="justify-content-center align-items-center">
           <Col xs="auto">
             <Image src={me} style={{ height: '200px', borderRadius: '10px' }} fluid />
@@ -73,7 +76,7 @@ function App() {
         <Row style={{ paddingBottom: '50px' }} className="justify-content-center">
           <Col xs="auto" className="mb-4">
             <a href="https://github.com/fasku1/job-tracker-project" target="_blank" style={{ textDecoration: 'none' }} className="card-link">
-              <Card style={{ width: '35rem' }} className="card">
+              <Card style={{ width: '35rem', '--delay': 1 }} className="card stagger-item" >
                 <Carousel>
                   <Carousel.Item>
                     <Card.Img variant="top" src={preview_jobtracker} className="portfolio-img" />
@@ -93,7 +96,7 @@ function App() {
             </a>
           </Col>
           <Col xs="auto" className="mb-4">
-            <Card style={{ width: '35rem' }}>
+            <Card style={{ width: '35rem', '--delay': 3 }} className="card stagger-item">
               <Carousel>
                 <Carousel.Item>
                   <Card.Img variant="top" src={preview_jobtracker} className="portfolio-img" />
@@ -112,7 +115,7 @@ function App() {
             </Card>
           </Col>
           <Col xs="auto" className="mb-4">
-            <Card style={{ width: '35rem' }}>
+            <Card style={{ width: '35rem', '--delay': 5 }} className="card stagger-item">
               <Carousel>
                 <Carousel.Item>
                   <Card.Img variant="top" src={preview_jobtracker} className="portfolio-img" />
@@ -136,7 +139,6 @@ function App() {
           </Col>
         </Row>
       </Container>
-
     </>
   )
 }

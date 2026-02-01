@@ -28,7 +28,7 @@ function App() {
           <Col xs="auto" style={{ textAlign: 'left' }}>
             <h1>Fasku's Portfolio</h1>
             <p style={{ fontSize: '1.2rem' }}>Hello! this is just a little portfolio of projects I have worked on! <br /> A little about me is I love to sing, game and do content creation :)</p>
-            <p style={{ fontSize: '1.2rem' }}>GitHub: Fasku1 | Discord: Fasku</p>
+            <p style={{ fontSize: '1.2rem' }}> <strong>GitHub</strong>: <a href="https://github.com/fasku1" target="_blank">Fasku1</a> | <strong>Discord</strong>: Fasku</p>
 
           </Col>
         </Row>

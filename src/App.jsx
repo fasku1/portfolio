@@ -4,6 +4,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Image from 'react-bootstrap/Image';
+import { useEffect, useRef } from 'react';
 
 import { Container, Row, Col } from 'react-bootstrap'
 import Button from 'react-bootstrap/Button';
@@ -17,8 +18,17 @@ import discord_logo from './assets/discord-logo.png'
 import preview_jobtracker from './assets/jobtracker.png';
 import preview_jobtracker1 from './assets/jobtracker1.png';
 
+import wiiSound from './assets/Wii-Disc.mp3';
+
+
 
 function App() {
+
+  function play() {
+    new Audio(wiiSound).play()
+  }
+
+  const [isAnimated, setIsAnimated] = useState(false);
 
   return (
     <>
@@ -26,7 +36,7 @@ function App() {
 
 
       {/* Title */}
-      <Container style={{ paddingTop: '50px', paddingBottom: '24px' }} className="pushdown-overlay" >
+      <Container style={{ paddingTop: '50px', paddingBottom: '24px' }} className="pushdown-overlay" onAnimationStart={play}>
         <Row className="justify-content-center align-items-center">
           <Col xs="auto">
             <Image src={me} style={{ height: '200px', borderRadius: '10px' }} fluid />
@@ -73,10 +83,10 @@ function App() {
 
       {/* Porfolio */}
       <Container >
-        <Row style={{ paddingBottom: '50px' }} className="justify-content-center">
-          <Col xs="auto" className="mb-4">
+        <Row style={{ paddingBottom: '50px' }} className="justify-content-center ">
+          <Col xs="auto" style={{ '--delay': 1 }} className="mb-4 stagger-item">
             <a href="https://github.com/fasku1/job-tracker-project" target="_blank" style={{ textDecoration: 'none' }} className="card-link">
-              <Card style={{ width: '35rem', '--delay': 1 }} className="card stagger-item" >
+              <Card style={{ width: '35rem' }} className="card" >
                 <Carousel>
                   <Carousel.Item>
                     <Card.Img variant="top" src={preview_jobtracker} className="portfolio-img" />
@@ -95,8 +105,8 @@ function App() {
               </Card>
             </a>
           </Col>
-          <Col xs="auto" className="mb-4">
-            <Card style={{ width: '35rem', '--delay': 3 }} className="card stagger-item">
+          <Col xs="auto" style={{ '--delay': 3 }} className="mb-4 stagger-item">
+            <Card style={{ width: '35rem' }}>
               <Carousel>
                 <Carousel.Item>
                   <Card.Img variant="top" src={preview_jobtracker} className="portfolio-img" />
@@ -110,12 +120,12 @@ function App() {
                 <Card.Text style={{ fontSize: '1.5rem' }}>
                   A real-time transaction monitoring app built with AWS and Twilio that detects potentially fraudulent transactions and notifies users in real-time via SMS.
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+                <Button variant="primary" onClick={play}>Go somewhere</Button>
               </Card.Body>
             </Card>
           </Col>
-          <Col xs="auto" className="mb-4">
-            <Card style={{ width: '35rem', '--delay': 5 }} className="card stagger-item">
+          <Col xs="auto" style={{ '--delay': 5 }} className="mb-4 stagger-item">
+            <Card style={{ width: '35rem' }}>
               <Carousel>
                 <Carousel.Item>
                   <Card.Img variant="top" src={preview_jobtracker} className="portfolio-img" />

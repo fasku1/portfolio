@@ -12,20 +12,38 @@ import Card from 'react-bootstrap/Card';
 import Carousel from 'react-bootstrap/Carousel';
 
 import me from './assets/mecrop.jpg';
-import github_logo from './assets/Octicons-mark-github.svg'
+import github_logo from './assets/github-logo.svg'
 import linkedin_logo from './assets/linkedin-logo.png'
 import discord_logo from './assets/discord-logo.png'
 import preview_jobtracker from './assets/jobtracker.png';
 import preview_jobtracker1 from './assets/jobtracker1.png';
 
-import wiiSound from './assets/Wii-Disc.mp3';
+import wiiSound from './assets/wii-disc.mp3';
+import wiiClick from './assets/wii-click.mp3'
+import wiiHover from './assets/wii-hover.wav'
 
 
 
 function App() {
 
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => setIsHovered(true);
+  const handleMouseLeave = () => setIsHovered(false);
+
+
+
   function play() {
     new Audio(wiiSound).play()
+  }
+  function click() {
+    const audio = new Audio(wiiClick)
+    audio.volume = 0.5 // 20% volume
+    audio.play()
+  }
+
+  function hover() {
+    new Audio(wiiHover).play()
   }
 
   const [isAnimated, setIsAnimated] = useState(false);
@@ -36,7 +54,8 @@ function App() {
 
 
       {/* Title */}
-      <Container style={{ paddingTop: '50px', paddingBottom: '24px' }} className="pushdown-overlay" onAnimationStart={play}>
+      {/*  onAnimationStart={play} // trying to play audio at start of launch for webpage */}
+      <Container style={{ paddingTop: '50px', paddingBottom: '24px' }} className="pushdown-overlay">
         <Row className="justify-content-center align-items-center">
           <Col xs="auto">
             <Image src={me} style={{ height: '200px', borderRadius: '10px' }} fluid />
@@ -85,7 +104,7 @@ function App() {
       <Container >
         <Row style={{ paddingBottom: '50px' }} className="justify-content-center ">
           <Col xs="auto" style={{ '--delay': 1 }} className="mb-4 stagger-item">
-            <a href="https://github.com/fasku1/job-tracker-project" target="_blank" style={{ textDecoration: 'none' }} className="card-link">
+            <a href="https://github.com/fasku1/job-tracker-project" target="_blank" style={{ textDecoration: 'none' }} className="card-link" onClick={click} onMouseEnter={hover}>
               <Card style={{ width: '35rem' }} className="card" >
                 <Carousel>
                   <Carousel.Item>
@@ -107,7 +126,7 @@ function App() {
           </Col>
           <Col xs="auto" style={{ '--delay': 3 }} className="mb-4 stagger-item">
             <Card style={{ width: '35rem' }}>
-              <Carousel>
+              <Carousel onClick={click}>
                 <Carousel.Item>
                   <Card.Img variant="top" src={preview_jobtracker} className="portfolio-img" />
                 </Carousel.Item>
@@ -126,7 +145,7 @@ function App() {
           </Col>
           <Col xs="auto" style={{ '--delay': 5 }} className="mb-4 stagger-item">
             <Card style={{ width: '35rem' }}>
-              <Carousel>
+              <Carousel onClick={click}>
                 <Carousel.Item>
                   <Card.Img variant="top" src={preview_jobtracker} className="portfolio-img" />
                 </Carousel.Item>

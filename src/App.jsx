@@ -153,10 +153,13 @@ function App() {
             <Card style={{ width: '35rem' }}>
               <Carousel onClick={click}>
                 <Carousel.Item>
-                  <Card.Img variant="top" src={preview_jobtracker} className="portfolio-img" />
+                  <Card.Img variant="top" src={preview_campusrating} className="portfolio-img" />
                 </Carousel.Item>
                 <Carousel.Item>
-                  <Card.Img variant="top" src={preview_jobtracker1} className="portfolio-img" />
+                  <Card.Img variant="top" src={preview_campusrating0} className="portfolio-img" />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <Card.Img variant="top" src={preview_campusrating1} className="portfolio-img" />
                 </Carousel.Item>
               </Carousel>
               <Card.Body>

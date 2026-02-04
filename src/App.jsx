@@ -1,7 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Image from 'react-bootstrap/Image';
 import { useEffect, useRef } from 'react';
@@ -11,16 +9,21 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Carousel from 'react-bootstrap/Carousel';
 
-import me from './assets/mecrop.jpg';
-import github_logo from './assets/github-logo.svg'
-import linkedin_logo from './assets/linkedin-logo.png'
-import discord_logo from './assets/discord-logo.png'
-import preview_jobtracker from './assets/jobtracker.png';
-import preview_jobtracker1 from './assets/jobtracker1.png';
+import me from './assets/pictures/icons/mecrop.jpg';
+import github_logo from './assets/pictures/icons/github-logo.svg'
+import linkedin_logo from './assets/pictures/icons/linkedin-logo.png'
+import discord_logo from './assets/pictures/icons/discord-logo.png'
 
-import wiiSound from './assets/wii-disc.mp3';
-import wiiClick from './assets/wii-click.mp3'
-import wiiHover from './assets/wii-hover.wav'
+import preview_jobtracker from './assets/pictures/jobtracker/jobtracker.png';
+import preview_jobtracker1 from './assets/pictures/jobtracker/jobtracker1.png';
+
+import preview_campusrating from './assets/pictures/campusrating/CampusRatingAppFigma.jpg'
+import preview_campusrating0 from './assets/pictures/campusrating/CampusRatingAppFigma0.jpg'
+import preview_campusrating1 from './assets/pictures/campusrating/CampusRatingAppFigma1.jpg'
+
+import wiiSound from './assets/sounds/wii-disc.mp3';
+import wiiClick from './assets/sounds/wii-click.mp3'
+import wiiHover from './assets/sounds/wii-hover.wav'
 
 
 
@@ -128,10 +131,13 @@ function App() {
             <Card style={{ width: '35rem' }}>
               <Carousel onClick={click}>
                 <Carousel.Item>
-                  <Card.Img variant="top" src={preview_jobtracker} className="portfolio-img" />
+                  <Card.Img variant="top" src={preview_campusrating} className="portfolio-img" />
                 </Carousel.Item>
                 <Carousel.Item>
-                  <Card.Img variant="top" src={preview_jobtracker1} className="portfolio-img" />
+                  <Card.Img variant="top" src={preview_campusrating0} className="portfolio-img" />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <Card.Img variant="top" src={preview_campusrating1} className="portfolio-img" />
                 </Carousel.Item>
               </Carousel>
               <Card.Body>

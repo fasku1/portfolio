@@ -17,6 +17,9 @@ import discord_logo from './assets/pictures/icons/discord-logo.png'
 import preview_jobtracker from './assets/pictures/jobtracker/jobtracker.png';
 import preview_jobtracker1 from './assets/pictures/jobtracker/jobtracker1.png';
 
+import preview_fraud from './assets/pictures/fraud/aws-lambda-logo.png';
+import preview_fraud1 from './assets/pictures/fraud/common-phone-scams.avif';
+
 import preview_campusrating from './assets/pictures/campusrating/CampusRatingAppFigma.jpg'
 import preview_campusrating0 from './assets/pictures/campusrating/CampusRatingAppFigma0.jpg'
 import preview_campusrating1 from './assets/pictures/campusrating/CampusRatingAppFigma1.jpg'
@@ -131,13 +134,10 @@ function App() {
             <Card style={{ width: '35rem' }}>
               <Carousel onClick={click}>
                 <Carousel.Item>
-                  <Card.Img variant="top" src={preview_campusrating} className="portfolio-img" />
+                  <Card.Img variant="top" src={preview_fraud} className="portfolio-img" style={{  height: 'auto' }}/>
                 </Carousel.Item>
                 <Carousel.Item>
-                  <Card.Img variant="top" src={preview_campusrating0} className="portfolio-img" />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <Card.Img variant="top" src={preview_campusrating1} className="portfolio-img" />
+                  <Card.Img variant="top" src={preview_fraud1} className="portfolio-img" />
                 </Carousel.Item>
               </Carousel>
               <Card.Body>

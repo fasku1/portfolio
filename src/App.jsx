@@ -125,7 +125,6 @@ function App() {
                   <Card.Text style={{ fontSize: '1.5rem' }}>
                     A full-stack web application that is designed to make it easy for people to keep track of all the jobs that they apply to built of React using google cloud platform API.
                   </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
                 </Card.Body>
               </Card>
             </a>
@@ -134,7 +133,7 @@ function App() {
             <Card style={{ width: '35rem' }}>
               <Carousel onClick={click}>
                 <Carousel.Item>
-                  <Card.Img variant="top" src={preview_fraud} className="portfolio-img" style={{  height: 'auto' }}/>
+                  <Card.Img variant="top" src={preview_fraud} className="portfolio-img" style={{ height: 'auto' }} />
                 </Carousel.Item>
                 <Carousel.Item>
                   <Card.Img variant="top" src={preview_fraud1} className="portfolio-img" />
@@ -145,7 +144,6 @@ function App() {
                 <Card.Text style={{ fontSize: '1.5rem' }}>
                   A real-time transaction monitoring app built with AWS and Twilio that detects potentially fraudulent transactions and notifies users in real-time via SMS.
                 </Card.Text>
-                <Button variant="primary" onClick={play}>Go somewhere</Button>
               </Card.Body>
             </Card>
           </Col>
@@ -167,7 +165,6 @@ function App() {
                 <Card.Text style={{ fontSize: '1.5rem' }}>
                   Another full-stack web application to help students discover campus locations suited for specific activities like studying, relaxing, or napping built of React, Spring Boot, and MySQL.
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
               </Card.Body>
             </Card>
           </Col>

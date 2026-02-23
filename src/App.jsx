@@ -69,7 +69,7 @@ function App() {
           <Col xs="auto" style={{ textAlign: 'left' }}>
             <h1>Fasku's Portfolio</h1>
 
-            <p style={{ fontSize: '1.2rem' }}>Hello! this is just a little portfolio of projects I have worked on! <br /> A little about me is I love to sing, game and do content creation :)</p>
+            <p style={{ fontSize: '1.2rem' }}>Hello! This is just a little portfolio of projects I have worked on! <br /> A little about me: I love to sing, game, and create content! :)</p>
 
 
             <Row className="gx-2 "> {/* gx-2 keeps them close like we discussed */}
@@ -87,7 +87,7 @@ function App() {
               </Col>
               <Col xs="auto">
                 <p className="mb-0" style={{ fontSize: '1.2rem' }}>
-                  <strong>Linked In</strong>: <a href="https://www.linkedin.com/in/ethan-l-yang/" target="_blank">Ethan Yang</a> |
+                  <strong>LinkedIn</strong>: <a href="https://www.linkedin.com/in/ethan-l-yang/" target="_blank">Ethan Yang</a> |
                 </p>
               </Col>
 
@@ -110,8 +110,8 @@ function App() {
       <Container >
         <Row style={{ paddingBottom: '50px' }} className="justify-content-center ">
           <Col xs="auto" style={{ '--delay': 1 }} className="mb-4 stagger-item">
-            <a href="https://github.com/fasku1/job-tracker-project" target="_blank" style={{ textDecoration: 'none' }} className="card-link" onClick={click} onMouseEnter={hover}>
-              <Card style={{ width: '35rem' }} className="card" >
+            <a href="https://github.com/fasku1/job-tracker-project" target="_blank" style={{ textDecoration: 'none' }} className="card-link">
+              <Card style={{ width: '35rem' }} className="h-100 card" >
                 <Carousel>
                   <Carousel.Item>
                     <Card.Img variant="top" src={preview_jobtracker} className="portfolio-img" />
@@ -123,15 +123,15 @@ function App() {
                 <Card.Body>
                   <Card.Title style={{ fontSize: '2rem' }}>Job Tracker App</Card.Title>
                   <Card.Text style={{ fontSize: '1.5rem' }}>
-                    A full-stack web application that is designed to make it easy for people to keep track of all the jobs that they apply to built of React using google cloud platform API.
+                    A full-stack web application designed to streamline the job search process. Users can easily track applications via an interface built with <strong>React</strong> and integrated with <strong>Google Cloud Platform APIs</strong>.
                   </Card.Text>
                 </Card.Body>
               </Card>
             </a>
           </Col>
           <Col xs="auto" style={{ '--delay': 3 }} className="mb-4 stagger-item">
-            <Card style={{ width: '35rem' }}>
-              <Carousel onClick={click}>
+            <Card style={{ width: '35rem' }} className="h-100">
+              <Carousel>
                 <Carousel.Item>
                   <Card.Img variant="top" src={preview_fraud} className="portfolio-img" style={{ height: 'auto' }} />
                 </Carousel.Item>
@@ -142,14 +142,14 @@ function App() {
               <Card.Body>
                 <Card.Title style={{ fontSize: '2rem' }}>Fraud Detection App</Card.Title>
                 <Card.Text style={{ fontSize: '1.5rem' }}>
-                  A real-time transaction monitoring app built with AWS and Twilio that detects potentially fraudulent transactions and notifies users in real-time via SMS.
+                  A real-time transaction monitoring app built with <strong>AWS</strong> and <strong>Twilio</strong> that detects potentially fraudulent transactions and notifies users in real-time via <strong>SMS</strong>.
                 </Card.Text>
               </Card.Body>
             </Card>
           </Col>
           <Col xs="auto" style={{ '--delay': 5 }} className="mb-4 stagger-item">
-            <Card style={{ width: '35rem' }}>
-              <Carousel onClick={click}>
+            <Card style={{ width: '35rem' }} className="h-100">
+              <Carousel>
                 <Carousel.Item>
                   <Card.Img variant="top" src={preview_campusrating} className="portfolio-img" />
                 </Carousel.Item>
@@ -163,7 +163,7 @@ function App() {
               <Card.Body>
                 <Card.Title style={{ fontSize: '2rem' }}>Campus Rating App</Card.Title>
                 <Card.Text style={{ fontSize: '1.5rem' }}>
-                  Another full-stack web application to help students discover campus locations suited for specific activities like studying, relaxing, or napping built of React, Spring Boot, and MySQL.
+                  A full-stack web application to help students discover campus locations suited for specific activities like studying, relaxing, or napping built with <strong>React</strong>, <strong>Spring Boot</strong>, and <strong>MySQL</strong>.
                 </Card.Text>
               </Card.Body>
             </Card>
